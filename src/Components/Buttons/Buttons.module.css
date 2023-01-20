@@ -5,76 +5,47 @@
   background-size: 70%;
   height: 100vh;
   width: 100%;
-  max-height: 450px;
+  max-height: 400px;
   max-width: 335px;
   display: flex;
 }
 
-.outerCircleBlue {
+.outerCircle {
     position: relative;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    box-shadow: inset 0px -5px 0px 0px rgba(12, 18, 44, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .3s;
+}
+
+.outerCircle:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.blue {
     top: 70px;
     left: 20px;
     background: linear-gradient(90deg, hsl(230, 89%, 62%),hsl(230, 89%, 65%));
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    box-shadow: inset 0px -5px 0px 0px rgba(12, 18, 44, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.innerCircleBlue {
-    background-color: white;
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
-    box-shadow: inset 0px 5px 0px 0px rgba(12, 18, 44, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.outerCircleYellow {
-    position: relative;
+.yellow {
     top: 70px;
     left: 80px;
     background: linear-gradient(90deg,hsl(39, 89%, 49%), hsl(40, 84%, 53%));
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    box-shadow: inset 0px -5px 0px 0px rgba(12, 18, 44, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.innerCircleYellow {
-    background-color: white;
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
-    box-shadow: inset 0px 5px 0px 0px rgba(12, 18, 44, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.outerCircleRed {
-    position: relative;
+.red {
     top: 230px;
     right: 110px;
     background: linear-gradient(90deg,hsl(349, 71%, 52%), hsl(349, 70%, 56%));
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    box-shadow: inset 0px -5px 0px 0px rgba(12, 18, 44, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.innerCircleRed {
+.innerCircle {
     background-color: white;
     border-radius: 50%;
     height: 90px;

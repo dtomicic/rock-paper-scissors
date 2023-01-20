@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ score }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
@@ -8,7 +8,7 @@ const Header = () => {
       </div>
       <div className={styles.scoreBox}>
         <p className={styles.scoreText}>Score</p>
-        <p className={styles.score}>0</p>
+        <p className={styles.score}>{score}</p>
       </div>
     </div>
   );
